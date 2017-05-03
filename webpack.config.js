@@ -23,7 +23,7 @@ module.exports = {
       loader: 'babel-loader',
       query: {
         presets: ['es2015', 'react', 'stage-0'],
-        //plugins: [["import", { libraryName: "antd", libraryDirectory: "lib", style: "css" }]]
+        plugins: [["import", {"libraryName": "antd","libraryDirectory": "lib", "style": true}]]
       }
     }, {
       test: /\.css$/,
