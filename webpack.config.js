@@ -22,19 +22,24 @@ module.exports = {
       ],
       loader: 'babel-loader',
       query: {
-        presets: ['es2015', 'react', 'stage-0']
+        presets: ['es2015', 'react', 'stage-0'],
+        //plugins: [["import", { libraryName: "antd", libraryDirectory: "lib", style: "css" }]]
       }
-    },{
+    }, {
       test: /\.css$/,
-      loader: 'style!css'
+      loader: 'style!css',
+      exclude: /node_modules/
+
     }, {
       test: /\.less$/,
       loader: 'style-loader!css-loader!less-loader'
-    },{ 
-      test: /\.(png|jpg)$/, 
-      loader: 'url?limit=25000' 
+  
+
+    }, {
+      test: /\.(png|jpg)$/,
+      loader: 'url?limit=25000'
     }
-    
+
     ]
   },
   resolve: {
@@ -46,9 +51,9 @@ module.exports = {
     port: 2354
   },
   devtool: 'source-map',
-  plugins:[
+  plugins: [
     new HtmlWebpackPlugin({
-      template:'./app/index.html'
+      template: './app/index.html'
     })
   ]
 };

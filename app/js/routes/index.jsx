@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Router, Route, IndexRoute, Link } from 'react-router';
+//import {Router, Route, IndexRoute, Link}  from 'react-router-dom';
 import App from '../components/App';
 // import NotFound from '../components/NotFound';
 
