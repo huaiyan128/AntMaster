@@ -8,9 +8,9 @@ const App = ({ location }) => {
     View=IndexView;
   }
     return ( 
-    <MainLayout> 
+    // <MainLayout> 
       <View />   
-    </MainLayout>
+    // </MainLayout>
     );
 };
 

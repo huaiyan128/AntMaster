@@ -2,17 +2,10 @@ import React from 'react';
 import { Icon, Form, Input, Button, message } from 'antd';
 import style from '../../css/login-page.less';
 
-//const FormItem = Form.Item;
+const FormItem = Form.Item;
+
 class Login extends React.Component {
-render () {
-  return(
-  <div>fffff</div>
-  );
-}
-}
-/*class Login extends React.Component {
   constructor () {
-    console.log("ddsd");
     super();
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -44,7 +37,7 @@ render () {
 
         <div className={style.body}>
           <header className={style.header}>
-            ReactManager
+            登陆
           </header>
 
           <section className={style.form}>
@@ -94,6 +87,6 @@ Login.contextTypes = {
   router: React.PropTypes.object.isRequired
 };
 
-Login = Form.create()(Login);*/
+Login = Form.create()(Login);
 
 export default Login;
